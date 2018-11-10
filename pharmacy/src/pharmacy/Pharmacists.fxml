@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="409.0" prefWidth="584.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="pharmacy.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="468.0" fitWidth="722.0">
+         <image>
+            <Image url="@background2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="addPharmacistButton" layoutX="69.0" layoutY="363.0" mnemonicParsing="false" onAction="#goToADDPharmacists" style="-fx-background-color: #ccccff;" text="Add Pharmacist" />
+      <Button layoutX="261.0" layoutY="363.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0" style="-fx-background-color: #ccccff;" text="Update Pharmacist" />
+      <Button layoutX="469.0" layoutY="363.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0" style="-fx-background-color: #ccccff;" text="Delete Pharmacist" />
+      <TableView fx:id="tableVeiwPH" layoutX="3.0" layoutY="14.0" prefHeight="298.0" prefWidth="713.0" style="-fx-background-color: #ccccff;">
+        <columns>
+          <TableColumn prefWidth="51.0" text="ID" />
+          <TableColumn prefWidth="114.0" text="Name" />
+            <TableColumn prefWidth="135.0" text="Shift Time" />
+            <TableColumn prefWidth="111.0" text="Salary" />
+            <TableColumn prefWidth="105.0" text="Column X" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

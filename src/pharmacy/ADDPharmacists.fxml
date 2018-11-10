@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pharmacy.FXMLDocumentController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="439.0" fitWidth="610.0" layoutX="-10.0" layoutY="-19.0">
+               <image>
+                  <Image url="@background2.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="61.0" layoutY="47.0" text="Name" textFill="#ebe7e7">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nPH" layoutX="249.0" layoutY="45.0" />
+            <TextField fx:id="AddrPH" layoutX="249.0" layoutY="153.0" />
+            <TextField fx:id="emPH" layoutX="249.0" layoutY="193.0" />
+            <TextField fx:id="PhonePH" layoutX="249.0" layoutY="233.0" />
+            <TextField fx:id="UserPH" layoutX="249.0" layoutY="273.0" />
+            <Label layoutX="63.0" layoutY="119.0" text="Gender" textFill="#ebe7e7">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="155.0" text="Address" textFill="#ebe7e7">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="195.0" text="Email" textFill="#ebe7e7">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="275.0" text="Username" textFill="#ebe7e7">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="235.0" text="Phone" textFill="#ebe7e7">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="315.0" text="Password" textFill="#ebe7e7">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passPH" layoutX="249.0" layoutY="313.0" />
+            <TextField fx:id="SihftPH" layoutX="249.0" layoutY="353.0" />
+            <Label layoutX="63.0" layoutY="355.0" text="Shift time" textFill="#ebe7e7">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="SalaryPH" layoutX="249.0" layoutY="391.0" />
+            <Label layoutX="63.0" layoutY="393.0" text="Basic Salary" textFill="#ebe7e7">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="savePH" layoutX="466.0" layoutY="163.0" mnemonicParsing="false" onAction="#addParmacistToDataBase" prefHeight="41.0" prefWidth="67.0" text="Save" />
+            <Label layoutX="10.0" layoutY="2.0" text="Add Pharmacist" textFill="#ebe7e7">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="83.0" text="Pharmacist ID" textFill="#ebe7e7">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="phID" layoutX="250.0" layoutY="81.0" />
+            <Button fx:id="resetButton" layoutX="466.0" layoutY="232.0" mnemonicParsing="false" onAction="#clearFields" prefHeight="38.0" prefWidth="67.0" text="Reset" />
+            <AnchorPane layoutX="249.0" layoutY="112.0" prefHeight="38.0" prefWidth="217.0">
+               <children>
+                  <RadioButton fx:id="maleBtn" layoutY="11.0" mnemonicParsing="false" selected="true" text="Male" textFill="WHITE">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="gender" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="femaleBtn" layoutX="75.0" layoutY="11.0" mnemonicParsing="false" text="Female" textFill="WHITE" toggleGroup="$gender" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="backButtoninAdd" layoutX="509.0" layoutY="369.0" mnemonicParsing="false" onAction="#goBackToPharmacistMenuFromAdd" prefHeight="38.0" prefWidth="77.0" text="Back" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
